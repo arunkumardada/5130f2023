@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2255a482;
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+header {
+    color: #fff;
+
+    position: absolute;
+    opacity: 60%;
+    font-weight: bolder;
+    width: 100%;
+    margin-left: 15%
+}
+
+.header-title {
+    margin-left: 20%;
+
+}
+a {
+    color: inherit;
+    display: inline-block;
+  }
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container {
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  opacity: 40%;
+}
+
+.shadowed-div {
+    width: 70%;
+    height: 500px;
+    background-color: #ffa60098;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    box-shadow: 5px 5px 10px #faad14;
+    border-radius: 25px;
+}
+
+.shadowed-div-table {
+    width: 70%;
+    height: 200px;
+    background-color: #ffa60098;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    box-shadow: 5px 5px 10px #faad14;
+    border-radius: 25px;
+}
+
+
+.sachin-info {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
