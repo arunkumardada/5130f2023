@@ -16,7 +16,7 @@ Web 2.0 is like the movie industry's move to colour and primitive 3D. Additional
 Web 3.0 would be like entering a brand-new universe with immersive experiences in the metaverse.
 
 
-References: 
+References:
 
 https://www.researchgate.net/publication/269310255_Web_10_to_Web_30_-_Evolution_of_the_Web_and_its_various_challenges
 
