@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2255a482;
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+header {
+    color: #fff;
+
+    position: absolute;
+    opacity: 60%;
+    font-weight: bolder;
+    width: 100%;
+    margin-left: 15%
+}
+
+.header-title {
+    margin-left: 20%;
+
+}
+a {
+    color: inherit;
+    display: inline-block;
+  }
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container {
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  opacity: 40%;
+}
+
+.shadowed-div {
+    width: 70%;
+    height: 500px;
+    background-color: #ffa60098;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    box-shadow: 5px 5px 10px #faad14;
+    border-radius: 25px;
+}
+
+.shadowed-div-table {
+    width: 70%;
+    height: 200px;
+    background-color: #ffa60098;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    box-shadow: 5px 5px 10px #faad14;
+    border-radius: 25px;
+}
+
+
+.sachin-info {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+/* Reset some default styles and set a background color */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the main content */
+
+
+/* Style the individual portfolio items */
+.portfolio-item {
+  background-color: #fff;
+  border: 1px solid #a38f20;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+.portfolio-item:hover {
+  background-color: rgb(238, 204, 70);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.portfolio-item p {
+  font-size: 1rem;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="userinfo.css"/>
+
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="index.html" style="color: #b50079;">Home</a> 
+        <a href="investmentportfolio.html" style="color: #b50079;">Investment Portfolio</a> 
+
+    </h1>
+    <h1>User Information Form</h1>
+    
+
+<section class="form_wrap">
+
+    <form class="form_grid" action="#" method="#">
+
+
+        <div class="items first_name_wrap">
+            <dl>
+                <dt>
+                    <label for="firstname">First Name:</label>
+                </dt>
+                <dd>
+                    <input class="form_element" type="text" 
+                    id="firstname" name="first_name" 
+                    placeholder="first name" required>
+                </dd>
+            </dl>
+  
+        </div>
+
+        <div class="items last_name_wrap">
+
+            <dl>
+                <dt>
+                    <label for="lastname">Last Name:</label>
+                </dt>
+                <dd>
+                    <input class="form_element" type="text" 
+                    id="lastname" name="last_name" 
+                    placeholder="last name" required>
+                </dd>
+            </dl>
+          
+        </div>
+                
+        <div class="items email_wrap">
+            <dl>
+                <dt>
+                    <label for="email">eMail:</label>
+                    </dt>
+                <dd>
+                    <input class="form_element" type="email" 
+                    id="email" name="e_mail"
+                    placeholder="Email" required>
+                </dd>
+            </dl>
+           
+        </div>
+
+        <div class="items age_wrap">
+
+            <dl>
+                <dt> 
+                    <label for="age">Age:</label>
+                </dt>
+                <dd>
+                    <input class="form_element" type="number" id="age" 
+                    min="0" max="120" name="age">
+                </dd>
+            </dl>
+         
+        </div>
+
+        <div class="items radio_wrap">  
+            Gender: <br>
+            <input type="radio" id="radioOne" 
+                   name="radio_group" value="news">
+            <label for="radioOne">Male</label>
+            <input type="radio" id="radioTwo" 
+                   name="radio_group" value="update">
+            <label for="radioTwo">Female</label>
+            <br>
+        
+        
+        </div>
+
+        <div class="item date_wrap">
+
+            <dl>
+                <dt>
+                    <label for="date">Date of Birth:</label>
+                </dt>
+                <dd>
+                    <input type="date" id="date" name="date">
+                </dd>
+            </dl>
+        
+        </div>
+               
+        <div class="items select_wrap">
+            <dl>
+                <dt>
+                    <label for="optionSelect">Select Your City:</label>
+                </dt>
+                <dd> 
+                    <select class="form_element" id="optionSelect" name="option_select">
+                        <option>Lowell</option>
+                        <option> Hyderabad</option>
+                        <option>Bangalore</option>
+                        <option>New Jersey</option>
+                        <option>Boston</option>
+                    </select>  
+                </dd>
+            </dl>
+           
+        </div> 
+                
+        <div class="items message_wrap">
+            <dl>
+                <dt>
+                    <p>Things you Love: </p>
+                </dt>
+                <dd>
+                    <textarea id="message" 
+                    name="leave_message"
+                    maxlength="160"
+                    placeholder="maximum 160 CHARS"></textarea>
+                </dd>
+            </dl>
+        
+        </div>
+
+        <div class="item submit_wrap">
+            <input type="submit" value="submit" id="submitBtn">
+        </div>
+                
+        </form>
+   
+    </section>
+
+</body>
+</html>
