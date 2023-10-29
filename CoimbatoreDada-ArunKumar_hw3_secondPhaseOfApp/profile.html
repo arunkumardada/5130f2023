@@ -1,8 +1,11 @@
 <html>
     <link rel="stylesheet" href="profile.css"/>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="./profile.js"></script>
+    <a href="index.html" style="color: #b50079;">Home</a> 
 
-   <h2 style="text-align:center">My Profile 👇</h2>
-
+    <h2 style="text-align:center;    background: #2ccc7c;">👇 My Profile 👇</h2>
+  <div style="display:flex">
    <div class="card">
      <img src="./arun.JPG" alt="Arun" style="width:100%;border-radius:30%">
      <h1>Arun Kumar Coimbatore Dada</h1>
@@ -17,6 +20,31 @@
      </div>
      <p><button style="color:orange">Contact: +1 (551) 359-1789</button></p>
    </div>
+   <div class="facts">
+     <p>My Current Location:<b>Lowell</b> </p> 
+     <p>I am From : <b>INDIA</b></p> 
+     <p>I would like to be in: <b>Venice</b></p> 
+     <p>My family is from : <b>India</b></p> 
+     <p>Good At <b>Nothing</b></p> 
+   </div>
+   <div class="file-upload">
+    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">UPLOAD Your Image</button>
+  
+    <div class="image-upload-wrap">
+      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+      <div class="drag-text">
+        <h3>DROP and DROP IMAGE TO UPLOAD</h3>
+      </div>
+    </div>
+    <div class="file-upload-content">
+      <img class="file-upload-image" src="#" alt="your image" />
+      <div class="image-title-wrap">
+        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+      </div>
+    </div>
+  </div>
+   
+  </div>
   
     <div>   
         <a href="index.html" style="color: #b50079;">  <p><button style="color:orange">Click Back</button></p> </a>
