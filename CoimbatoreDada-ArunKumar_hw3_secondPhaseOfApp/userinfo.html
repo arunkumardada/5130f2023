@@ -52,171 +52,104 @@
         <a href="investmentportfolio.html" style="color: #b50079;">Investment Portfolio</a> 
 
     </h1>
-    <h1>Facts</h1>
+    <h1 style="color:orangered">Facts</h1>
     
    
-    <h1>My Background</h1>
+    <h1 style="color:brown">My Background</h1>
 
-    <h2>Place of Birth</h2>
+    <h2 style="color:brown">Place of Birth</h2>
     <p>I am born in  <strong>Mahboobnagar</strong></p>
 
-    <h2>Where I Live Now</h2>
+    <h2 style="color:brown">Where I Live Now</h2>
     <p>Currently Live in  <strong>MA </strong>,  Plymouth and the Pilgrims. Thanksgiving tradition. Salem witch trials. Boston Tea Party. Fall foliage. Successful sports teams.</p>
 
-    <h2>Where I'd Like to Live</h2>
+    <h2 style="color:brown">Where I'd Like to Live</h2>
     <p>I would Like to Live in <strong>Venice </strong></p> 
 
-    <h2>Additional Details</h2>
+    <h2 style="color:brown">Additional Details</h2>
 
-    <h3>Favorite Hobby</h3>
+    <h3 style="color:brown">Favorite Hobby</h3>
     <p>Watching Podcasts.</p>
 
-    <h3>Hidden Talent</h3>
+    <h3 style="color:brown">Hidden Talent</h3>
     <p>Let it be Hidden</p>
 
-    <h3>Most Memorable Vacation</h3>
+    <h3 style="color:brown">Most Memorable Vacation</h3>
     <p>Bachelors Paradise <strong>GOA</strong>.</p>
 
-    <h3>Favorite Cuisine</h3>
+    <h3 style="color:brown">Favorite Cuisine</h3>
     <p>favorite food is <strong>UGGANI BHAJJI😋</strong>.</p>
+    <h1 style="color:brown"> Please Fill Personal Information </h1>
 
 <section class="form_wrap">
-
-    <form class="form_grid" action="#" method="#">
-
-
-        <div class="items first_name_wrap">
-            <dl>
-                <dt>
-                    <label for="firstname">First Name:</label>
-                </dt>
-                <dd>
-                    <input class="form_element" type="text" 
-                    id="firstname" name="first_name" 
-                    placeholder="first name" required>
-                </dd>
-            </dl>
-  
+   <div class="row">
+       <div>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
         </div>
-
-        <div class="items last_name_wrap">
-
-            <dl>
-                <dt>
-                    <label for="lastname">Last Name:</label>
-                </dt>
-                <dd>
-                    <input class="form_element" type="text" 
-                    id="lastname" name="last_name" 
-                    placeholder="last name" required>
-                </dd>
-            </dl>
-          
+        <div>
+            <label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" placeholder="Last Name" required>
         </div>
-                
-        <div class="items email_wrap">
-            <dl>
-                <dt>
-                    <label for="email">eMail:</label>
-                    </dt>
-                <dd>
-                    <input class="form_element" type="email" 
-                    id="email" name="e_mail"
-                    placeholder="Email" required>
-                </dd>
-            </dl>
-           
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Your Email" required>
         </div>
-
-        <div class="items age_wrap">
-
-            <dl>
-                <dt> 
-                    <label for="age">Age:</label>
-                </dt>
-                <dd>
-                    <input class="form_element" type="number" id="age" 
-                    min="0" max="120" name="age">
-                </dd>
-            </dl>
-         
+        <div>
+            <label>Gender:</label>
+            <input type="text" id="cl" name="gender" placeholder="Enter Gender"  required>
         </div>
-
-        <div class="items radio_wrap">  
-            Gender: <br>
-            <input type="radio" id="radioOne" 
-                   name="radio_group" value="news">
-            <label for="radioOne">Male</label>
-            <input type="radio" id="radioTwo" 
-                   name="radio_group" value="update">
-            <label for="radioTwo">Female</label>
-            <br>
         
-        
+    </div>
+    <div class="row">
+        <div>
+            <label for="currentlocation">Current Location</label>
+            <input type="text" id="cl" name="location" placeholder="Current Location">
+        </div>
+        <div>
+            <label for="currentlocation">Date of Birth</label>
+            <input type="text" id="dob" name="dob" placeholder="Enter Birth Date">
         </div>
 
-        <div class="item date_wrap">
+        <div>
+            <label for="currentlocation">Where do you live now ?</label>
+            <input type="text" id="live" name="live" placeholder="live">
+        </div>
+        <div>
+            <label for="currentlocation">Things you Love ?</label>
+            <textarea name="Text1" cols="40" rows="5" placeholder="THINGS YOU LOVE ?"></textarea>
 
-            <dl>
-                <dt>
-                    <label for="date">Date of Birth:</label>
-                </dt>
-                <dd>
-                    <input type="date" id="date" name="date">
-                </dd>
-            </dl>
-        
         </div>
-               
-        <div class="items select_wrap">
-            <dl>
-                <dt>
-                    <label for="optionSelect">Select Your City:</label>
-                </dt>
-                <dd> 
-                    <select class="form_element" id="optionSelect" name="option_select">
-                        <option>Lowell</option>
-                        <option> Hyderabad</option>
-                        <option>Bangalore</option>
-                        <option>New Jersey</option>
-                        <option>Boston</option>
-                    </select>  
-                </dd>
-            </dl>
-           
-        </div> 
-                
-        <div class="items message_wrap">
-            <dl>
-                <dt>
-                    <p>Things you Love: </p>
-                </dt>
-                <dd>
-                    <textarea id="message" 
-                    name="leave_message"
-                    maxlength="160"
-                    placeholder="maximum 160 CHARS"></textarea>
-                </dd>
-            </dl>
-            <dl>
-                <dt>
-                    <p>Upload Image: </p>
-                </dt>
-                <dd>
-                    <input id="message" 
-                    type="file"
-                    placeholder="upload"></textarea>
-                </dd>
-            </dl>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="other">Other</option>
+            </select>
+         </div>
+    </div>
+    <div class="row">
+        <div>
+            <label>What do you Like ? </label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Food </label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Entertainment </label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">Sports</label>
         </div>
-            
-
-        <div class="item submit_wrap">
-            <input type="submit" value="submit" id="submitBtn">
+        <div>
+            <label for="currentlocation">Where do you live now ?</label>
+            <input type="text" id="live" name="live" placeholder="live">
         </div>
-                
-        </form>
-   
+        <div>
+            <label for="currentlocation">Upload your IMAGE</label>
+            <input type="file" id="Upload" name="Upload">
+        </div>
+    </div>
+    <input type="Submit" value="submit"/>
     </section>
 
 </body>
