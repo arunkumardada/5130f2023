@@ -25,7 +25,11 @@
      <p>I am From : <b>INDIA</b></p> 
      <p>I would like to be in: <b>Venice</b></p> 
      <p>My family is from : <b>India</b></p> 
-     <p>Good At <b>Nothing</b></p> 
+     <p>Good At <b>Nothing</b></p> <br/><br/>
+
+     <p style="color:red">Change Location: </p><input type="text" id="location" /><br/><br/>
+     <button onclick="myLocationChanged()">Click</button>
+     <p style="color:red">Updated Location: </p><p id="updatedlocation" style="color:blue"></p>
    </div>
    <div class="file-upload">
     <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">UPLOAD Your Image</button>

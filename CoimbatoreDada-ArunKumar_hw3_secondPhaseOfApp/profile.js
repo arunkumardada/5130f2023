@@ -1,3 +1,10 @@
+function myLocationChanged(e) {
+  localStorage.setItem("location", document.getElementById("location").value);
+
+  document.getElementById("updatedlocation").innerHTML =
+    localStorage.getItem("location");
+}
+
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
