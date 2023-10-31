@@ -26,7 +26,11 @@ function onSubmit() {
   reset();
   database.ref("data").once("value", function (snapshot) {
     var data = snapshot.val();
-    alert("Thank you " + data.fname + " For Submitting Form");
+    alert(
+      "Thank you " +
+        data.fname +
+        " For Submitting Form and details saved in database"
+    );
     console.log(data.name);
     console.log(data.age);
   });
