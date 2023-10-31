@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="userinfo.css"/>
+
+   <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="index.html" style="color: #b50079;">Home</a> 
+        <a href="investmentportfolio.html" style="color: #b50079;">Investment Portfolio</a> 
+
+    </h1>
+<section class="form_wrap">
+    <h2>More Facts</h2>
+
+   <div class="row">
+       <div>
+            <label for="name">Hobbies:</label>
+            <input type="text" id="hobbies" name="name" placeholder="Your Hobbies" required>
+        </div>
+        <div>
+            <label for="name">Skills :</label>
+            <input type="text" id="Skills" name="name" placeholder="Skills" required>
+        </div>
+        <div>
+            <label for="education">education:</label>
+            <input type="text" id="education" name="education" placeholder="Your education" required>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div>
+            <label for="goals">Goals </label>
+            <input type="text" id="goals" name="goals" placeholder="Goals">
+        </div>
+        <div>
+            <label for="Mobile">Mobile Number</label>
+            <input type="text" id="Mobile" name="Mobile" placeholder="Enter Mobile number">
+        </div>
+    </div>
+    <input type="Submit" value="submit" onclick="onSubmit()"/><br/>
+    <a href="index.html">
+         <input type="Submit" value="GO BACK"/>
+    </a>
+    </section>
+
+</body>
+</html>

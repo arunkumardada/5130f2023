@@ -3,8 +3,11 @@
 <head>
     <title>User Information Form</title>
     <link rel="stylesheet" href="userinfo.css"/>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script type="text/javascript" src="./userinfo.js"></script>
 
-    <style>
+   <style>
         form {
             max-width: 400px;
             margin: 0 auto;
@@ -47,26 +50,26 @@
     </style>
 </head>
 <body>
+    <div style="    background-color: bisque;">
     <h1>
         <a href="index.html" style="color: #b50079;">Home</a> 
         <a href="investmentportfolio.html" style="color: #b50079;">Investment Portfolio</a> 
-
     </h1>
     <h1 style="color:orangered">Facts</h1>
     
    
-    <h1 style="color:brown">My Background</h1>
+    <h3 style="color:brown">My Background</h1>
 
-    <h2 style="color:brown">Place of Birth</h2>
+    <h3 style="color:brown">Place of Birth</h2>
     <p>I am born in  <strong>Mahboobnagar</strong></p>
 
-    <h2 style="color:brown">Where I Live Now</h2>
+    <h3 style="color:brown">Where I Live Now</h2>
     <p>Currently Live in  <strong>MA </strong>,  Plymouth and the Pilgrims. Thanksgiving tradition. Salem witch trials. Boston Tea Party. Fall foliage. Successful sports teams.</p>
 
-    <h2 style="color:brown">Where I'd Like to Live</h2>
+    <h3 style="color:brown">Where I'd Like to Live</h2>
     <p>I would Like to Live in <strong>Venice </strong></p> 
 
-    <h2 style="color:brown">Additional Details</h2>
+    <h3 style="color:brown">Additional Details</h2>
 
     <h3 style="color:brown">Favorite Hobby</h3>
     <p>Watching Podcasts.</p>
@@ -80,16 +83,16 @@
     <h3 style="color:brown">Favorite Cuisine</h3>
     <p>favorite food is <strong>UGGANI BHAJJI😋</strong>.</p>
     <h1 style="color:brown"> Please Fill Personal Information </h1>
-
+</div>
 <section class="form_wrap">
    <div class="row">
        <div>
             <label for="name">First Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="fname" name="name" placeholder="Your Name" required>
         </div>
         <div>
             <label for="name">Last Name:</label>
-            <input type="text" id="name" name="name" placeholder="Last Name" required>
+            <input type="text" id="lname" name="name" placeholder="Last Name" required>
         </div>
         <div>
             <label for="email">Email:</label>
@@ -97,7 +100,7 @@
         </div>
         <div>
             <label>Gender:</label>
-            <input type="text" id="cl" name="gender" placeholder="Enter Gender"  required>
+            <input type="text" id="gender" name="gender" placeholder="Enter Gender"  required>
         </div>
         
     </div>
@@ -116,8 +119,8 @@
             <input type="text" id="live" name="live" placeholder="live">
         </div>
         <div>
-            <label for="currentlocation">Things you Love ?</label>
-            <textarea name="Text1" cols="40" rows="5" placeholder="THINGS YOU LOVE ?"></textarea>
+            <label for="thingslove">Things you Love ?</label>
+            <textarea name="Text1" id="thingslove" cols="40" rows="5" placeholder="THINGS YOU LOVE ?"></textarea>
 
         </div>
         <div>
@@ -149,7 +152,7 @@
             <input type="file" id="Upload" name="Upload">
         </div>
     </div>
-    <input type="Submit" value="submit"/>
+    <input type="Submit" value="submit" onclick="onSubmit()"/>
     </section>
 
 </body>
