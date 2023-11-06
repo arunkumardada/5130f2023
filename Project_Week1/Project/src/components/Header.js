@@ -40,7 +40,7 @@ const Header = () => {
         <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
           {" "}
           {isSignInForm
-            ? "New to AI Film Factory ? Sign Up Now"
+            ? "New to AI Film Factory ? Sign Up Now."
             : "Already Registered ? Sign In Now"}
         </p>
       </form>
