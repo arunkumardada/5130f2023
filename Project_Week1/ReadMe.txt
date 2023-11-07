@@ -10,6 +10,9 @@ We also intend to show movie details that we retrieve from the TMDB API on our h
 By giving users access to a dynamic movie database, this will improve the
 user experience and improve the functionality and engagement of our application.
 
+
+This week I have accomplished in creating a basic layout and styling the SignIn Form. 
+
 References:
 
 https://platform.openai.com/docs/plugins/authentication/oauth
