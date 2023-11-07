@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .validation-message {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <div class="validation-message" id="email-validation"></div>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <div class="validation-message" id="phone-validation"></div>
+
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" required>
+    <div class="validation-message" id="website-validation"></div>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+  <script>
+    const form = document.getElementById('myForm');
+
+    form.addEventListener('submit', function (event) {
+      let isValid = true;
+      const emailInput = document.getElementById('email');
+      const phoneInput = document.getElementById('phone');
+      const websiteInput = document.getElementById('website');
+
+      const emailValidation = document.getElementById('email-validation');
+      const phoneValidation = document.getElementById('phone-validation');
+      const websiteValidation = document.getElementById('website-validation');
+
+      if (!isValidEmail(emailInput.value)) {
+        emailValidation.textContent = 'Invalid email format';
+        isValid = false;
+      } else {
+        emailValidation.textContent = '';
+      }
+
+      if (!isValidPhoneNumber(phoneInput.value)) {
+        phoneValidation.textContent = 'Invalid phone number format';
+        isValid = false;
+      } else {
+        phoneValidation.textContent = '';
+      }
+
+      if (!isValidWebsite(websiteInput.value)) {
+        websiteValidation.textContent = 'Invalid website format';
+        isValid = false;
+      } else {
+        websiteValidation.textContent = '';
+      }
+
+      if (!isValid) {
+        event.preventDefault(); 
+      } else {
+        alert("Thank you for Submitted Details!!!")
+      }
+    });
+
+    function isValidEmail(email) {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return emailRegex.test(email);
+    }
+
+    function isValidPhoneNumber(phone) {
+      const phoneRegex = /^\+?[0-9()-.\s]{10,20}$/; 
+      return phoneRegex.test(phone);
+    }
+
+    function isValidWebsite(website) {
+      const websiteRegex = /^(https?|ftp):\/\/[A-Za-z0-9-]+\.[A-Za-z0-9]+(\/[A-Za-z0-9-_.]*)*$/;
+      return websiteRegex.test(website);
+    }
+  </script>
+</body>
+</html>
