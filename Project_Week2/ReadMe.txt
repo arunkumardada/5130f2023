@@ -38,16 +38,13 @@ Resolving these challenges demanded meticulous attention to detail and collabora
 
 Tasks I have done: This week I have accomplished in creating a configuring googlefirebase for the user authentication/validation.
 
-
-
-
-
 References:
 
-https://platform.openai.com/docs/plugins/authentication/oauth
-https://kymoraa.medium.com/using-the-tmdb-api-in-my-flutter-movies-app-part-1-e1176d446429
-https://developer.themoviedb.org/reference/intro/getting-started
-https://tailwindcss.com/docs/guides/create-react-app
+https://medium.com/nerd-for-tech/setting-up-a-create-react-app-with-firebase-4fb3601fe2d4
+
+https://redux.js.org/
+
+https://regexr.com/
 
 
 Team Members-
