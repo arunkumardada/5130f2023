@@ -9,90 +9,66 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
             <form class="d-flex" role="search">
-            
               <button class="btn btn-outline-success" type="button" id="signoutbutton">Sign Out</button>
             </form>
           </div>
         </div>
       </nav>
-
-      <h2 id="msg"></h2>
+      <h2 id="message"></h2>
       <h2 id="greet"></h2>
       <p id="location"></p>
       <p id="weather"></p>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
-      <script>
-        // let UserCreds = JSON.parse(sessionStorage.getItem("user-cred"));
-        // let UserInfo = JSON.parse(sessionStorage.getItem("user-info"));
-
-        let MsgHead = document.getElementById('msg');
-        let GreetHead = document.getElementById('greet');
+    <script>
+        let messageHead = document.getElementById('message');
+        let greetings = document.getElementById('greet');
         let SignoutBtn = document.getElementById('signoutbutton');
-        let LocationElement = document.getElementById('location');
-        let WeatherElement = document.getElementById('weather');
-
-        MsgHead.innerText = `user with email  logged in`;
-        GreetHead.innerText = `welcome`;
-
+        let elementLocation = document.getElementById('location');
+        let elementWeather = document.getElementById('weather');
+        messageHead.innerText = `Logged in Email `;
+        greetings.innerText = `welcome`;
         let Signout = () => {
-            // sessionStorage.removeItem("user-cred")
-            // sessionStorage.removeItem("user-info");
             window.location.href = 'login.html'
         }
-
         let CheckCred = () => {
             if(sessionStorage.getItem("user-cred"))
             window.location.href = 'login.html'
         }
-
         window.addEventListener('load', CheckCred);
         SignoutBtn.addEventListener('click', Signout);
-
         if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
+                const longitude = position.coords.longitude;
                 console.log("Latitude: " + position.coords.latitude);
                 console.log("Longitude: " + position.coords.longitude);
-                LocationElement.innerText = `Your current location: Latitude ${latitude}, Longitude ${longitude}`;
-
-                const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your actual API key
+                elementLocation.innerText = `Your current location: Latitude ${latitude}, Longitude ${longitude}`;
+                const apiKey = 'AIzaSyBn4EuBKAouXM-w7TVLqd2g-JDUobbf1rw';
                     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
-
                     fetch(apiUrl)
                         .then(response => response.json())
                         .then(data => {
                             const weatherDescription = data.weather[0].description;
                             const temperature = data.main.temp;
-
-                            WeatherElement.innerText = `Weather: ${weatherDescription}, Temperature: ${temperature}°C`;
+                            elementWeather.innerText = `Weather: ${weatherDescription}, Temperature: ${temperature}°C`;
                         })
                         .catch(error => {
-                            console.error("Error fetching weather:", error);
-                            WeatherElement.innerText = "Error fetching weather information.";
+                            console.error("Error in getting weather info:", error);
+                            elementWeather.innerText = "Error fetching weather information.";
                         });
-              
             },
             (error) => {
                 console.error("Error getting location:", error.message);
-                LocationElement.innerText = "Error getting location.";
+                elementLocation.innerText = "Error getting location.";
             }
         );
     } else {
         console.error("Geolocation is not supported by this browser.");
-        LocationElement.innerText = "Geolocation is not supported by this browser.";
+        elementLocation.innerText = "Geolocation is not supported by this browser.";
     }
-
       </script>
-
-
 </body>
 </html>
