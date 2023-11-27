@@ -15,14 +15,12 @@ switches the user interface between the home page and the search bar.
 Users can quickly navigate between the various sections of the application 
 with this feature.
 
-Tasks I have DONE:
+Tasks I have Accomplished:
 
 Creating Movie cards for the NowPlaying, Popular Movies and Top Rated Movies.
 And incorporated the API's for Popular, Top Rated and Upcoming Movies to display it in UI.
 
-
 References:
-
 https://www.themoviedb.org/?language=en-US
 
 
