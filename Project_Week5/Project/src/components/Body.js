@@ -1,6 +1,8 @@
 import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
+import Trailer from "./Trailer";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const Body = () => {
@@ -12,6 +14,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "/trailer/:id",
+      element: <Trailer />,
     },
   ]);
 

@@ -3,7 +3,6 @@ import openai from "../utils/openai";
 import { useDispatch, useSelector } from "react-redux";
 import lang from "../utils/languageConstants";
 import { API_OPTIONS } from "../utils/constants";
-import { json } from "react-router-dom";
 import { addGPTMovieResult } from "../utils/gptSlice";
 
 const GptSearchBar = () => {
@@ -11,11 +10,11 @@ const GptSearchBar = () => {
   const dispatch = useDispatch();
   const searchText = useRef(null);
 
-  const gptQuery =
-    "Act as a Movie Recommendation System and suggest some movies for the query " +
-    searchText?.current?.value +
-    ".Only Give me 5 movie names, comma separated like the example given ahead. Example: 'Nishabd', 'Sarkaar','Bahubali','RRR', 'Geethanjali'";
   const handleGptSearchClick = async () => {
+    const gptQuery =
+      "Act as a Movie Recommendation System and suggest some movies for the query " +
+      searchText?.current?.value +
+      ".Only Give me 5 movie names, comma separated like the example given ahead. Example: 'Nishabd', 'Sarkaar','Bahubali','RRR', 'Geethanjali'";
     const chatCompletion = await openai.chat.completions.create({
       messages: [{ role: "user", content: gptQuery }],
       model: "gpt-3.5-turbo",

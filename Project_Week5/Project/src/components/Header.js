@@ -60,7 +60,9 @@ const Header = () => {
   }, []);
   return (
     <div className="absolute z-10 px-8 py-2 bg-gradient-to-b from-black w-screen flex justify-between">
-      <img className="w-44 " src={LOGO} alt="logo" />
+      <h2 className="text-[#ff4c46] bg-red text-3xl w-69 px-8 py-2 bg-gradient-to-b from-black">
+        THE AI FILM FACTORY
+      </h2>
 
       {user && (
         <div className="flex p-2">

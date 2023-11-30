@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import { addUpComingMovies } from "../utils/moviesSlice";
@@ -22,7 +22,7 @@ const useUpComingMovies = () => {
     //  Make API Call only if upComingMovies is null to reduce unncessary API Calls
 
     if (!upComingMovies) getUpComingMovies();
-  }, []);
+  });
 };
 
 export default useUpComingMovies;
