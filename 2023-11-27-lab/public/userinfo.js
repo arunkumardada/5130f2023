@@ -15,8 +15,7 @@ var database = firebase.database();
 function onSubmit() {
   database.ref("data").set({
     email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    website: document.getElementById("website").value,
+    password: document.getElementById("password").value,
   });
   reset();
   database.ref("data").once("value", function (snapshot) {

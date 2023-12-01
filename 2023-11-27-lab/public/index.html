@@ -52,19 +52,14 @@ h1 {
 <script type="text/javascript" src="./location.js"></script>
 
 <body>
-  <h1>Hi Everyone!</h1>
   <form id="myForm">
     <label for="email">Email:</label>
     <input type="text" id="email" name="email" required>
     <div class="validation-message" id="email-validation"></div>
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required>
-    <div class="validation-message" id="phone-validation"></div>
-
-    <label for="website">Website:</label>
-    <input type="url" id="website" name="website" required>
-    <div class="validation-message" id="website-validation"></div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <div class="validation-message" id="password-validation"></div>
 
     <input type="submit" value="Submit" onclick="onSubmit()">
     <input type="reset" value="Reset">
@@ -191,12 +186,10 @@ h1 {
     form.addEventListener('submit', function (event) {
       let isValid = true;
       const emailInput = document.getElementById('email');
-      const phoneInput = document.getElementById('phone');
-      const websiteInput = document.getElementById('website');
+      const passwordInput = document.getElementById('password');
 
       const emailValidation = document.getElementById('email-validation');
-      const phoneValidation = document.getElementById('phone-validation');
-      const websiteValidation = document.getElementById('website-validation');
+      const passwordValidation = document.getElementById('password-validation');
 
       if (!isValidEmail(emailInput.value)) {
         emailValidation.textContent = 'Invalid email format';
@@ -205,24 +198,17 @@ h1 {
         emailValidation.textContent = '';
       }
 
-      if (!isValidPhoneNumber(phoneInput.value)) {
-        phoneValidation.textContent = 'Invalid phone number format';
+      if (!isValidpasswordNumber(passwordInput.value)) {
+        passwordValidation.textContent = 'Min 6 Chars Password Allowed';
         isValid = false;
       } else {
-        phoneValidation.textContent = '';
-      }
-
-      if (!isValidWebsite(websiteInput.value)) {
-        websiteValidation.textContent = 'Invalid website format';
-        isValid = false;
-      } else {
-        websiteValidation.textContent = '';
+        passwordValidation.textContent = '';
       }
 
       if (!isValid) {
         event.preventDefault(); 
       } else {
-        alert("Thank you for Submitted Details!!!")
+        alert("Thank you " + emailInput.value+ " for Submitting your Details!!!")
       }
     });
 
@@ -231,15 +217,11 @@ h1 {
       return emailRegex.test(email);
     }
 
-    function isValidPhoneNumber(phone) {
-      const phoneRegex = /^\+?[0-9()-.\s]{10,20}$/; 
-      return phoneRegex.test(phone);
+    function isValidpasswordNumber(password) {
+      const passwordRegex = /^.{6,}$/; 
+      return passwordRegex.test(password);
     }
 
-    function isValidWebsite(website) {
-      const websiteRegex = /^(https?|ftp):\/\/[A-Za-z0-9-]+\.[A-Za-z0-9]+(\/[A-Za-z0-9-_.]*)*$/;
-      return websiteRegex.test(website);
-    }
   </script>
   <script>
     window.addEventListener('load', async () => {
