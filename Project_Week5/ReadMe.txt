@@ -14,10 +14,8 @@ Extensive testing was done to find and fix any problems with the API query.
 Integration of the GPT Search Bar:
 
 
-2.Making sure the GPT Search Bar integrated seamlessly turned out to be essential for a seamless user experience.
-Error management and user feedback systems were put in place to handle any possible integration process interruptions.
-carried out user acceptability testing to get input and adjust the integration according to user preferences.
-
+2.Ensuring that the GPT Search Bar was smoothly integrated was really
+ important to make sure users have a great experience. 
 
 Internationalization Implementation:
 
@@ -27,7 +25,8 @@ incorporated a clear and easy-to-use language selection feature that allows user
 
 
 Tasks I have Accomplished:
-Implementing the i18n including 4 Languages for GPT Search Bar
+Implementing the WHole Chat GPT Search Bar with integrating the openapi's to get the data and show results
+below searchbar.
 
 References:
 https://www.themoviedb.org/?language=en-US
