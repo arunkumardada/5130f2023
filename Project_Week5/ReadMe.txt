@@ -19,8 +19,7 @@ Integration of the GPT Search Bar:
 
 Internationalization Implementation:
 
-3.The GPT Search Bar's internationalisation required careful consideration of linguistic quirks.
-worked in tandem with linguists and language specialists to guarantee precise translations and interactions that are suitable for the target culture.
+3.The GPT Search Bar's internationalisation.
 incorporated a clear and easy-to-use language selection feature that allows users to select their favourite language.
 
 
@@ -31,8 +30,6 @@ below searchbar.
 References:
 https://www.themoviedb.org/?language=en-US
 https://platform.openai.com/api-keys
-
-
 
 Team Members -
 
